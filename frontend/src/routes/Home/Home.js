@@ -4,7 +4,7 @@ import Filter from "../../helpers/Filter/Filter";
 import HeaderPage from "../../components/HeaderPage/HeaderPage";
 import "./index.css";
 
-import { Header } from "semantic-ui-react";
+import { Header, Placeholder, Segment } from "semantic-ui-react";
 
 function Home({ data, location }) {
   return (
@@ -15,7 +15,22 @@ function Home({ data, location }) {
           Proyectos
         </Header>
         <div className="grid-cards">
-          <ContinerCard data={data}></ContinerCard>
+          {data[0].title ? (
+            <ContinerCard data={data} />
+          ) : (
+            <Segment raised style={{ width: 400, height: 400 }}>
+              <Placeholder>
+                <Placeholder.Header image>
+                  <Placeholder.Line />
+                  <Placeholder.Line />
+                </Placeholder.Header>
+                <Placeholder.Paragraph>
+                  <Placeholder.Line length="medium" />
+                  <Placeholder.Line length="short" />
+                </Placeholder.Paragraph>
+              </Placeholder>
+            </Segment>
+          )}
         </div>
       </section>
       <footer className="footer">

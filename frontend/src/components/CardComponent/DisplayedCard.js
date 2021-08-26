@@ -11,11 +11,12 @@ function DisplayedCard({
   cb,
   history,
   technologies,
+  animation,
 }) {
   return (
     <motion.div
       className=" showed-card-custom"
-      animate={{ y: -350, x: 500, opacity: 1 }}
+      animate={animation()}
       exit={{ opacity: 0 }}
       layoutId={id}
       onClick={() => cb(false)}
@@ -27,7 +28,7 @@ function DisplayedCard({
           </Card.Header>
           <p>{history}</p>
           <Card.Content>
-            <div style={{ display: "flex", gap: "10px" }}>
+            <div className="card-images-custom-container">
               {imgs.map((image) => (
                 <Image src={image} size="small" />
               ))}

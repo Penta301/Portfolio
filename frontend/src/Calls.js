@@ -16,7 +16,7 @@ function Calls() {
     },
   ]);
   const api = axios.create({
-    baseURL: "http://127.0.0.1:8000/api/",
+    baseURL: "https://agile-reaches-40987.herokuapp.com/api/",
   });
 
   const getData = async (setter, url) => {
@@ -30,8 +30,8 @@ function Calls() {
   };
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     getData(setData, "get_all_projects/");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return {

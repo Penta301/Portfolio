@@ -1,8 +1,8 @@
 import sys
 sys.path.append('..')
 from fastapi import HTTPException, APIRouter 
-from backend.model import Project
-from backend.database import (
+from model import Project
+from database import (
     collection_projects,
     remove_operation,
     create_operation,

@@ -15,6 +15,14 @@ function ContinerCard({ data }) {
     setter(value);
   };
 
+  const handleAnimation = () => {
+    if (window.innerWidth >= 1100) {
+      console.log("executed");
+      return { y: -350, x: 500, opacity: 1 };
+    }
+    return { opacity: 1 };
+  };
+
   return (
     <>
       <AnimateSharedLayout type={"crossfade"}>
@@ -47,6 +55,7 @@ function ContinerCard({ data }) {
                     id={title}
                     imgs={imgs}
                     technologies={technologies}
+                    animation={handleAnimation}
                   />
                 );
               })}
