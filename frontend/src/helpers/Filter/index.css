@@ -1,0 +1,12 @@
+.buttons-filter-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.content-filter-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

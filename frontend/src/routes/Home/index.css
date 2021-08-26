@@ -1,0 +1,20 @@
+.grid-cards {
+  margin-top: 20px;
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer {
+  height: 30vh;
+  display: flex;
+  align-items: flex-end;
+}

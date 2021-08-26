@@ -1,0 +1,29 @@
+.technologies-panel {
+  width: 100%;
+  background-color: #1b1c1d;
+  display: flex;
+}
+
+.dropdown-case {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  position: absolute;
+}
+
+.content-container-dropdown {
+  position: absolute;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.contact-buttons-dropdown {
+  display: flex;
+  align-self: flex-end;
+  justify-content: space-around;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}

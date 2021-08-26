@@ -1,0 +1,7 @@
+fastapi
+motor
+uvicorn
+datetime
+python-multipart
+typing==3.7.4.3
+pymongo[srv]
