@@ -13,7 +13,7 @@ function Filter({ data }) {
     setter(newData);
   };
 
-  const test = cleanData(data);
+  const newData = cleanData(data);
 
   return (
     <div>
@@ -26,11 +26,11 @@ function Filter({ data }) {
         >
           All
         </Button>
-        {test.map((category, index) => {
+        {newData.map((category, index) => {
           return (
             <Button
               onClick={() =>
-                newItems(filterData, filterCategories, setFilterData, category)
+                newItems(data, filterCategories, setFilterData, category)
               }
               basic={true}
               color="blue"

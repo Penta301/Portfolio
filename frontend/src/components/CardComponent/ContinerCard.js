@@ -17,10 +17,16 @@ function ContinerCard({ data }) {
 
   const handleAnimation = () => {
     if (window.innerWidth >= 1100) {
-      console.log("executed");
-      return { y: -350, x: 500, opacity: 1 };
+      console.log("tested");
+      return {
+        y: -window.innerHeight / 4,
+        x: -window.innerWidth / 4,
+      };
     }
-    return { opacity: 1 };
+    return {
+      y: -window.innerHeight / 4,
+      opacity: 1,
+    };
   };
 
   return (
