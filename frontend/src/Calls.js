@@ -16,7 +16,7 @@ function Calls() {
     },
   ]);
   const api = axios.create({
-    baseURL: "https://agile-reaches-40987.herokuapp.com/api/",
+    baseURL: "https://radiant-brushlands-74044.herokuapp.com/api/",
   });
 
   const getData = async (setter, url) => {
