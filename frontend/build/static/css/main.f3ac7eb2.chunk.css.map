@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,MACE,+BACF,CAEA,YACE,UACF","file":"main.f3ac7eb2.chunk.css","sourcesContent":[":root {\n  --main-background-color: #1b1c1d;\n}\n\n.text-white {\n  color: white;\n}\n"]}
