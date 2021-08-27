@@ -1,7 +1,10 @@
 import motor.motor_asyncio 
 import random
+import os
 
-client = motor.motor_asyncio.AsyncIOMotorClient('mongodb+srv://Juan:Tilacino1@cluster0.fkk0a.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+uri_srv = os.getenv("MONGODB_URI_SRV")
+
+client = motor.motor_asyncio.AsyncIOMotorClient(uri_srv)
 
 database = client.Portfolio
 collection_projects = database.projects

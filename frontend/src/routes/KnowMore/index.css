@@ -20,6 +20,16 @@
 }
 
 .information-know-more {
-  align-items: left;
+  text-align: left;
   font-size: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  .information-know-more {
+    font-size: 15px;
+  }
+
+  .content-know-more {
+    width: 100%;
+  }
 }
